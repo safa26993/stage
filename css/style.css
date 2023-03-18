@@ -1,0 +1,95 @@
+:root{
+    --main-color: rgb(15,157,88);
+    
+}
+
+html,body{
+    font-family: 'Noto Kufi Arabic', sans-serif;
+   /* background-color:  rgb(236, 235, 235);*/
+    font-size: 1rem;
+    box-sizing: border-box;
+    height: 10000px;
+    scrollbar-color: var(--main-color);
+    direction:rtl;
+}
+
+
+/*navbar*/
+
+.navbar{
+    background-color: var(--main-color);
+    padding: 0;
+}
+.navbar .navbar-nav .nav-link{
+    color: white;
+    
+}
+.navbar .navbar-toggler{
+    color: white;
+    border-color: var(--main-color);
+}
+.navbar .navbar-toggler:focus{
+    box-shadow: none;
+}
+
+
+
+.df{
+    background-color: var(--main-color);
+    color: white;
+}
+
+/*button*/
+.btn{
+    background-color: var(--main-color);
+    text-align: center;
+    color: white;
+    padding: 7px;
+    border-radius: 0%;
+}
+.btn:hover{
+    color: white;
+}
+
+
+.t-table{
+    display:flex;
+    margin-bottom: 16px;
+    margin-top: 100px;
+}
+
+.filter{
+    text-align: right;
+    font-weight: 500;
+    padding-left: 5px;
+    padding-right:5px ;
+    min-height: calc(100vh - 72px);
+}
+.title{
+    margin-top: 30px;
+    margin-bottom: 40px;
+    font-weight: 800;
+}
+.title2{
+    font-weight: 600;
+}
+.card{
+    margin-top: 60px;
+}
+.online-corses .row{
+    background-color: white;
+    min-height: calc(100vh - 72px);
+    align-items: center;
+}   
+.form{
+    text-align: right;
+    
+} 
+
+span{
+    color: var(--main-color);
+}
+.online-corses .row .image img{
+    width: 600px;
+    margin-left: 150px;
+}

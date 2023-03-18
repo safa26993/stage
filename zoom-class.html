@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اضافةحصة في الزوم| الجلفة للدراسة</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="icon" href="img/logo-sm.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@300;400;500;700&family=Tilt+Neon&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--navbar-->
+  <nav class="navbar navbar-expand-md sticky-top fixed-top shadow text-white">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img src="img/logo-sm.png" width="60" height="50" alt="الجلفة للدراسة"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse " id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="#"><i class="fa-solid fa-house"></i>الرئيسية </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fa-regular fa-newspaper"></i>الاخبار</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fa-solid fa-chalkboard"></i>حصص اونلاين</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fa-solid fa-right-to-bracket"></i>تسجيل الدخول</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fa-solid fa-user-plus"></i>انشاء حساب</a>
+            </li>   
+          </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container bg-white col-xl-10 col-sm-12" >
+    <div class="container">
+     <div class="card no-border shadow">
+        <div class="card-body">
+            <div>
+              <h4 class="title text-center">اضافة حصة جديدة</h4>
+            </div>
+            <form class="form">
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="i">المرحلة</label> 
+                  <select class="custom-select" id="validationDefault04" required>
+                    <option value="0" selected>المرحلة التعليمية</option>
+                    <option value="1">ابتدائي</option>
+                    <option value="2">متوسط</option>
+                    <option value="3">ثالثة</option>
+                  </select> 
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="i">المادة</label>
+                  <input type="text" class="form-control" id="">
+                </div> 
+                <div class="form-group col-md-6">
+                  <label for="i">السنة</label>
+                  <select class="custom-select" id="validationDefault04" required>
+                    <option value="0" selected>المستوى الدراسي</option>
+                    <option value="1">اولى</option>
+                    <option value="2">ثانية</option>
+                    <option value="3">ثالثة</option>
+                    <option value="4">رابعة</option>
+                    <option value="5">خامسة</option>
+                 </select>
+                </div>
+               
+               <div class="form-group col-md-6">
+                  <label for="i">الاستاذ</label>
+                  <input type="text" class="form-control" id="">
+                </div> 
+                <div class="form-group col-md-6">
+                    <label for="inputCity">تاريخ الحصة</label>
+                    <input type="date" class="form-control" id="">
+                  </div>
+               
+                <div class="form-group col-md-6">
+                  <label for="i">عنوان الحصة</label>
+                  <input type="text" class="form-control" id="">
+                </div> 
+                  <div class="form-group col-md-3">
+                    <label for="inputCity">التوقيت</label>
+                    <input type="time" class="form-control" id="">
+                  </div>
+                  <div class="form-group col-md-3">
+                    <label for="inputZip">مدة الحصة</label>
+                    <input type="number" class="form-control" placeholder="" id="">
+                  </div>
+                   <div class="form-group" style="width: 49%; margin-right: 5px;">
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="تفاصيل اكثر ...."></textarea>
+                  </div>
+              </div>
+            </form>
+            <hr>
+            <a href="" class="btn" id="#btn" data-toggle="modal" data-target="#m1">انشاء حصة</a>
+            <a href="" class="btn" id="#btn" data-toggle="modal" data-target="#m2">الغاء</a>
+        </div>
+     </div> 
+    </div>
+ </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="m1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <br><br><br><br><br><br><br>
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <img src="img/istockphoto-1164721866-612x612.jpg" alt="" style="width: 28%; margin-right: 200px; padding: 0;">
+      <div class="modal-body text-center">
+        <h5>خطا , يرجى التاكد من ملا جميع الخانات</h5>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">موافق</button>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <div class="modal fade" id="m2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <br><br><br><br><br><br><br><br><br><br>
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+          <div class="modal-body text-center">
+          <h5>تم انشاءالحصة في الزوم بنجاح</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!--custom js file-->
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
